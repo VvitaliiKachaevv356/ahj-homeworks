@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  cursor: url("../pic/ham.png"), auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.field {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1240px;
+  height: 70vh;
+  border: 2px solid black;
+  margin: auto;
+  background: #b2b2b2;
+}
+
+.cell {
+  width: 25%;
+  height: 25%;
+  border: 4px solid black;
+  position: relative;
+}
+.cell .goblin {
+  position: absolute;
+  left: 25%;
+  top: 15%;
+  width: 50%
+}
+
+.goblin {
+  background-image: url("../pic/goblin.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.gameInfo {
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.miss {
+  margin-right: 50px;
+}
