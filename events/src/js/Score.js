@@ -1,9 +1,9 @@
 export default class Score {
   constructor() {
     this.score = 0;
-    document.querySelector(".field").addEventListener("click", this.hit);
   }
-  hit = (event) => {
+
+  hit(event) {
     if (
       (event.target.classList.contains("cell") &&
         event.target.children.length) ||
@@ -11,8 +11,9 @@ export default class Score {
     ) {
       this.score++;
       document.querySelector(".score_count").textContent = this.score;
-      document.querySelector(".goblin").remove();
-    }
-  };
-}
 
+      const goblin = document.querySelector(".goblin");
+      if (goblin) goblin.remove();
+    }
+  }
+}
