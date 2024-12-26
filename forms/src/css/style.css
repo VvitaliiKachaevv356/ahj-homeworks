@@ -1,0 +1,60 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #000;
+  margin-top: 30px;
+}
+.btn {
+  width: 8rem;
+  height: 3rem;
+  background-color: #ff0000;
+  border-radius: 10px;
+  color: #fff;
+  position: relative;
+  margin: 10px;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.popover {
+  width: 250px;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 100;
+}
+.popover-title {
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+  background-color: #ff0000;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.popover-content {
+  padding: 10px;
+  font-size: 15px;
+  color: black;
+}
+.hidden {
+  display: none;
+}
